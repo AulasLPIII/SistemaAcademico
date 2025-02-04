@@ -13,12 +13,13 @@ namespace ProjetoAcademico.Controller
         {
             //Criar um objeto Disciplina
             DisciplinaDTO disciplinaDTO = new DisciplinaDTO();
-            disciplinaDTO.Sigla = sigla;
+            /*disciplinaDTO.Sigla = sigla;
             disciplinaDTO.Nome = nome;
             disciplinaDTO.Cargahoraria = cargahoraria;
             disciplinaDTO.Modulo = modulo;
             disciplinaDTO.Tipo = tipo;
             disciplinaDTO.Eixotecnico = eixotecnico;
+            */
             /*
             DisciplinaDAO disciplinadao = new DisciplinaDAO();
             disciplinadao.salvar(disciplinaDTO);
