@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\projetoacademico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|c:\\users\\mauro lopes\\source\\repos\\solucaoacademico\\projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|c:\\users\\mauro lopes\\source\\repos\\solucaoacademico\\projetoacademico\\controller\\controllerdisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\controller\\controllerdisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\frmdisciplinas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\projetoacademico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|solutionrelative:projetoacademico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A38B4AF1-2E4A-42F5-86C1-50961A2ADB92}|ProjetoAcademico\\ProjetoAcademico.csproj|c:\\users\\mauro lopes\\source\\repos\\solucaoacademico\\projetoacademico\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,38 +38,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmDisciplinas.cs [Projeto]",
+              "DocumentIndex": 2,
+              "Title": "FrmDisciplinas.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\FrmDisciplinas.cs",
               "RelativeDocumentMoniker": "ProjetoAcademico\\FrmDisciplinas.cs",
-              "ToolTip": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\FrmDisciplinas.cs [Projeto]",
-              "RelativeToolTip": "ProjetoAcademico\\FrmDisciplinas.cs [Projeto]",
+              "ToolTip": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\FrmDisciplinas.cs [Design]",
+              "RelativeToolTip": "ProjetoAcademico\\FrmDisciplinas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T13:42:45.227Z",
-              "EditorCaption": " [Projeto]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ControllerDisciplina.cs",
               "DocumentMoniker": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\Controller\\ControllerDisciplina.cs",
               "RelativeDocumentMoniker": "ProjetoAcademico\\Controller\\ControllerDisciplina.cs",
               "ToolTip": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\Controller\\ControllerDisciplina.cs",
               "RelativeToolTip": "ProjetoAcademico\\Controller\\ControllerDisciplina.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvw4AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T23:58:37.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T23:58:37.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FrmDisciplinas.cs",
               "DocumentMoniker": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\FrmDisciplinas.cs",
               "RelativeDocumentMoniker": "ProjetoAcademico\\FrmDisciplinas.cs",
               "ToolTip": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\FrmDisciplinas.cs",
               "RelativeToolTip": "ProjetoAcademico\\FrmDisciplinas.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAIAzwEgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwHQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T00:08:52.476Z",
               "EditorCaption": ""
@@ -89,15 +88,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\Form1.cs",
               "RelativeDocumentMoniker": "ProjetoAcademico\\Form1.cs",
               "ToolTip": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\Form1.cs [Projeto]",
               "RelativeToolTip": "ProjetoAcademico\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T23:30:20.33Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2025-01-15T23:30:20.33Z"
             }
           ]
         }

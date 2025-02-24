@@ -2,7 +2,7 @@ SELECT * FROM bdacademicolp3.disciplina;
 
 insert into disciplina (sigla, nome, cargahoraria, modulo, tipo, eixotecnico)
 values
-('PRT','Língua Portuguesa',80,1,'Teórica',0);
+('PRT I','Língua Portuguesa I',80,1,'Teórica',0);
 
 insert into disciplina (sigla, nome, cargahoraria, modulo, tipo, eixotecnico)
 values

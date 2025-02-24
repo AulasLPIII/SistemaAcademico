@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XLtHt6IZnDs=",
+  "dgSpecHash": "AMMPep+G7JM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mauro Lopes\\source\\repos\\SolucaoAcademico\\ProjetoAcademico\\ProjetoAcademico.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Mauro Lopes\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512"
+  ],
   "logs": []
 }
