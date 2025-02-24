@@ -16,3 +16,7 @@ C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\ne
 C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ref\ProjetoAcademico.dll
 C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ProjetoAcademico.FrmDisciplinas.resources
 C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ProjetoAcademico.Properties.Resources.resources
+C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ProjetoAcademico.csproj.AssemblyReference.cache
+C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ProjetoAcademico.sourcelink.json
+C:\Users\Mauro Lopes\source\repos\SolucaoAcademico\ProjetoAcademico\obj\Debug\net8.0-windows\ProjetoA.BD67CDB9.Up2Date
