@@ -39,6 +39,9 @@
             LblModulo = new Label();
             CmbModulo = new ComboBox();
             GrpbTipo = new GroupBox();
+            RdTeoricaPratica = new RadioButton();
+            RdPratica = new RadioButton();
+            RdTeorica = new RadioButton();
             groupBox1 = new GroupBox();
             RdNao = new RadioButton();
             RdSim = new RadioButton();
@@ -50,9 +53,6 @@
             BarraBtnListar = new ToolStripButton();
             toolStripSeparator3 = new ToolStripSeparator();
             BarraBtnDeletar = new ToolStripButton();
-            RdTeorica = new RadioButton();
-            RdPratica = new RadioButton();
-            RdTeoricaPratica = new RadioButton();
             GrpbCargaHoraria.SuspendLayout();
             GrpbTipo.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -174,6 +174,38 @@
             GrpbTipo.TabStop = false;
             GrpbTipo.Text = "Tipo da Disciplina";
             // 
+            // RdTeoricaPratica
+            // 
+            RdTeoricaPratica.AutoSize = true;
+            RdTeoricaPratica.Location = new Point(305, 41);
+            RdTeoricaPratica.Name = "RdTeoricaPratica";
+            RdTeoricaPratica.Size = new Size(180, 27);
+            RdTeoricaPratica.TabIndex = 4;
+            RdTeoricaPratica.Text = "Teórica e Prática";
+            RdTeoricaPratica.UseVisualStyleBackColor = true;
+            // 
+            // RdPratica
+            // 
+            RdPratica.AutoSize = true;
+            RdPratica.Location = new Point(166, 41);
+            RdPratica.Name = "RdPratica";
+            RdPratica.Size = new Size(93, 27);
+            RdPratica.TabIndex = 3;
+            RdPratica.Text = "Prática";
+            RdPratica.UseVisualStyleBackColor = true;
+            // 
+            // RdTeorica
+            // 
+            RdTeorica.AutoSize = true;
+            RdTeorica.Checked = true;
+            RdTeorica.Location = new Point(17, 41);
+            RdTeorica.Name = "RdTeorica";
+            RdTeorica.Size = new Size(95, 27);
+            RdTeorica.TabIndex = 2;
+            RdTeorica.TabStop = true;
+            RdTeorica.Text = "Teórica";
+            RdTeorica.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(RdNao);
@@ -261,6 +293,7 @@
             BarraBtnListar.Size = new Size(68, 68);
             BarraBtnListar.Text = "toolStripButton1";
             BarraBtnListar.ToolTipText = "Listar Disciplinas";
+            BarraBtnListar.Click += BarraBtnListar_Click;
             // 
             // toolStripSeparator3
             // 
@@ -277,38 +310,7 @@
             BarraBtnDeletar.Size = new Size(68, 68);
             BarraBtnDeletar.Text = "toolStripButton1";
             BarraBtnDeletar.ToolTipText = "Apagar uma Disciplina";
-            // 
-            // RdTeorica
-            // 
-            RdTeorica.AutoSize = true;
-            RdTeorica.Checked = true;
-            RdTeorica.Location = new Point(17, 41);
-            RdTeorica.Name = "RdTeorica";
-            RdTeorica.Size = new Size(95, 27);
-            RdTeorica.TabIndex = 2;
-            RdTeorica.TabStop = true;
-            RdTeorica.Text = "Teórica";
-            RdTeorica.UseVisualStyleBackColor = true;
-            // 
-            // RdPratica
-            // 
-            RdPratica.AutoSize = true;
-            RdPratica.Location = new Point(166, 41);
-            RdPratica.Name = "RdPratica";
-            RdPratica.Size = new Size(93, 27);
-            RdPratica.TabIndex = 3;
-            RdPratica.Text = "Prática";
-            RdPratica.UseVisualStyleBackColor = true;
-            // 
-            // RdTeoricaPratica
-            // 
-            RdTeoricaPratica.AutoSize = true;
-            RdTeoricaPratica.Location = new Point(305, 41);
-            RdTeoricaPratica.Name = "RdTeoricaPratica";
-            RdTeoricaPratica.Size = new Size(180, 27);
-            RdTeoricaPratica.TabIndex = 4;
-            RdTeoricaPratica.Text = "Teórica e Prática";
-            RdTeoricaPratica.UseVisualStyleBackColor = true;
+            BarraBtnDeletar.Click += BarraBtnDeletar_Click;
             // 
             // FrmDisciplinas
             // 

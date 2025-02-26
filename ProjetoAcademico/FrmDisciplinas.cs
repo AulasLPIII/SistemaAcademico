@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySqlConnector;
+using ProjetoAcademico.DAO;
 
 namespace ProjetoAcademico
 {
@@ -23,12 +24,12 @@ namespace ProjetoAcademico
         private void BarraBtnSalvar_Click(object sender, EventArgs e)
         {
             string sigla = "", nome = "", tipo = "";
-            int cargahoraria = 0, modulo=0;
+            int cargahoraria = 0, modulo = 0;
             bool eixotecnologico = true;
 
             //Validar os campos da tela (preenchimento obrigatório)
             string retornomensagem = ValidaCampos();
-            if(retornomensagem != "")
+            if (retornomensagem != "")
             {
                 MessageBox.Show(retornomensagem);
             }
@@ -78,38 +79,9 @@ namespace ProjetoAcademico
                 {
                     eixotecnologico = false;
                 }
-                //Trabalhar com Banco de Dados
-                string strconexao = "";
-
-                //String de Conexão
-                strconexao = "server=localhost;userid=professor;password=professor@;database=bdacademicolp3";
-                //Criação do Canal de Conexão
-                MySqlConnection con = new MySqlConnection(strconexao);
-                //Abertura do Canal de Conexão
-                con.Open();
-                //String contendo o comando SQL a ser enviado ao SGBD
-                string sql = "insert into disciplina " +
-                                "(sigla,nome,cargahoraria,modulo,tipo,eixotecnico) " +
-                                "values " +
-                                "(@sigla,@nome,@ch,@modulo,@tipo,@eixo)";
-                //Criação do objeto de comando que irá carregar o comando SQL até o SGBD
-                MySqlCommand envelope = new MySqlCommand();
-                //Indica qual o comando SQL irá ser enviado pelo canal
-                envelope.CommandText = sql;
-                //Indica qual canal será usado para enviar o comando
-                envelope.Connection = con;
-                //Permuta os parâmetros com valores
-                envelope.Parameters.AddWithValue("@sigla", sigla);
-                envelope.Parameters.AddWithValue("@nome", nome);
-                envelope.Parameters.AddWithValue("@ch", cargahoraria);
-                envelope.Parameters.AddWithValue("@modulo", modulo);
-                envelope.Parameters.AddWithValue("@tipo", tipo);
-                envelope.Parameters.AddWithValue("@eixo", eixotecnologico);
-                //Prepara o comando
-                envelope.Prepare();
-                //Dispara o comando pelo canal de conexão e aguarda o retorno do processamento
-                int resultado = envelope.ExecuteNonQuery();
-
+                //Cria um objeto Controller para ajudar a Salvar os Dados
+                ControllerDisciplina controllerdisciplina = new ControllerDisciplina();
+                int resultado = controllerdisciplina.SalvarDisciplina(sigla, nome, cargahoraria, modulo, tipo, eixotecnologico);
                 if (resultado > 0)
                 {
                     MessageBox.Show("Dados salvos com sucesso");
@@ -118,15 +90,6 @@ namespace ProjetoAcademico
                 {
                     MessageBox.Show("Algo deu errado!!!");
                 }
-
-                //Usou o canal de comunicação
-                con.Close();
-
-
-                //Cria um objeto Controller para ajudar a Salvar os Dados
-                ControllerDisciplina controllerdisciplina = new ControllerDisciplina();
-                controllerdisciplina.SalvarDisciplina(sigla,nome,cargahoraria,modulo,tipo,eixotecnologico);
-
             }
 
         }
@@ -134,24 +97,35 @@ namespace ProjetoAcademico
         public string ValidaCampos()
         {
             string mensagem = "";
-            if (TxtSigla.Text.Trim() == "") 
+            if (TxtSigla.Text.Trim() == "")
             {
                 mensagem = "A sigla é obrigatória!!";
                 return mensagem;
             }
 
-            if(TxtNome.Text.Trim() == "")
+            if (TxtNome.Text.Trim() == "")
             {
                 mensagem = "O nome da disciplina é obrigatória!!";
                 return mensagem;
-            }  
+            }
 
-            if(CmbModulo.Text.Trim() == "")
+            if (CmbModulo.Text.Trim() == "")
             {
                 mensagem = "O módulo é obrigatório!!!";
                 return mensagem;
             }
             return mensagem;
+        }
+
+        private void BarraBtnListar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Listar Disciplinas");
+
+        }
+
+        private void BarraBtnDeletar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ProjetoAcademico.util
             //Conexao com o Banco de Dados
             string strconexao = "";
             //String de Conexao com o Banco de Dados
-            strconexao = "server=localhost;userid=professor;password=professor@;database=bdcensopet";
+            strconexao = "server=localhost;userid=professor;password=professor@;database=bdacademicolp3";
             //Criação do Canal de Comunicação
             con = new MySqlConnection(strconexao);
         }
