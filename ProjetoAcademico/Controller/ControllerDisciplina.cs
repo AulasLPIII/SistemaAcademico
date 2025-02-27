@@ -21,10 +21,21 @@ namespace ProjetoAcademico.Controller
             disciplinaDTO.Tipo = tipo;
             disciplinaDTO.Eixotecnico = eixotecnico;
             
-            
+            //Criar um objeto DAO
             DisciplinaDAO disciplinadao = new DisciplinaDAO();
+            //Salvar a disciplina no banco de dados
             int resultadodao = disciplinadao.salvar(disciplinaDTO);
+            //Retornar o resultado da operação
             return resultadodao;           
+        }
+
+        public List<DisciplinaDTO> ListarDisciplinas()
+        {
+            //Criar um objeto DAO
+            DisciplinaDAO disciplinadao = new DisciplinaDAO();
+            //Retornar uma lista contendo as disciplinas salvas no banco de dados
+            List<DisciplinaDTO> lista = disciplinadao.listar();
+            return lista;
         }
     }
 }

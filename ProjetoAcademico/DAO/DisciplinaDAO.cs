@@ -13,8 +13,11 @@ namespace ProjetoAcademico.DAO
 {
     internal class DisciplinaDAO
     {
+        //Atributos da Classe DAO
         MySqlConnection? con;
         MySqlCommand? envelope;
+        MySqlDataReader? cursor;
+        List<DisciplinaDTO> listadisciplinas;
         string? sql;
 
         public DisciplinaDAO()
@@ -52,6 +55,41 @@ namespace ProjetoAcademico.DAO
             //Fechando a Conexão
             con.Close();
             return resultado;
+        }
+
+        public List<DisciplinaDTO> listar()
+        {
+            //Criacao do objeto de lista de disciplinas
+            listadisciplinas = new List<DisciplinaDTO>();
+            //Abrir o canal de comunicação
+            con.Open();
+            //Comando SQL a ser executado
+            sql = "Select * from disciplina";
+            //Criação de um objeto envelope (Comando MySql)
+            envelope = new MySqlCommand(sql, con);
+            envelope.Prepare();
+            //O método ExecuteReader deve ser usado em comandos que retornam
+            //um conjunto de dados tabulares, como o SELECT.
+            //O objeto cursor permite navegar no conjunto de dados retornados
+            cursor = envelope.ExecuteReader();
+            while (cursor.Read()) 
+            {
+                //Transformando cada linha da tabela retornada em um objeto
+                DisciplinaDTO disciplinadto = new DisciplinaDTO();
+                disciplinadto.Id = cursor.GetInt32("iddisciplina");
+                disciplinadto.Sigla = cursor.GetString("sigla");
+                disciplinadto.Nome = cursor.GetString("nome");
+                disciplinadto.Cargahoraria = cursor.GetInt32("cargahoraria");
+                disciplinadto.Modulo = Convert.ToInt32(cursor.GetString("modulo"));
+                disciplinadto.Tipo = cursor.GetString("tipo");
+                disciplinadto.Eixotecnico = cursor.GetBoolean("eixotecnico");
+                //Adicionar o objeto a Lista de Disciplinas
+                listadisciplinas.Add(disciplinadto);
+            }
+            //Fechar o canal de comunicação
+            con.Close();
+            //Retorna a lista de disciplinas
+            return listadisciplinas;
         }
     }
 }

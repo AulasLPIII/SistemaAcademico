@@ -119,7 +119,30 @@ namespace ProjetoAcademico
 
         private void BarraBtnListar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Listar Disciplinas");
+            ControllerDisciplina controller = new ControllerDisciplina();
+            List<DisciplinaDTO> listaretorno = controller.ListarDisciplinas();
+            //Caso a lista retornada pelo Controller esteja vazia, significa que 
+            //não tem nenhuma disciplina no banco de dados, cadastrada
+            if (listaretorno.Count == 0)
+            {
+                MessageBox.Show("Não há disciplinas cadastradas");
+            }
+            else
+            {
+                string mensagem = "";
+                foreach (DisciplinaDTO disciplinadto in listaretorno)
+                {
+                    mensagem = "ID:" + disciplinadto.Id.ToString() + "\n";
+                    mensagem = mensagem + "Sigla:" + disciplinadto.Sigla + "\n";
+                    mensagem = mensagem + "Nome:" + disciplinadto.Nome + "\n";
+                    mensagem = mensagem + "Carga Horária:" + disciplinadto.Cargahoraria.ToString() + "\n";
+                    mensagem = mensagem + "Módulo:" + disciplinadto.Modulo.ToString() + "\n";
+                    mensagem = mensagem + "Tipo:" + disciplinadto.Tipo + "\n";
+                    string pertence = disciplinadto.Eixotecnico ? "Sim" : "Não";
+                    mensagem = mensagem + "Pertence ao Eixo Tecnológico:" + pertence;
+                    MessageBox.Show(mensagem);
+                }
+            }
 
         }
 
